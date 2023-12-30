@@ -71,10 +71,15 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "hide-and-show": {
+          '0%, 100%': { opacity: '0' },
+          '50%': { opacity: '1' },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "hide-and-show": "hide-and-show 1s linear infinite",
       },
     },
   },
